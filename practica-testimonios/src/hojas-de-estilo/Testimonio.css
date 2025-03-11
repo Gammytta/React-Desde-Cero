@@ -1,0 +1,72 @@
+.contenedor-testimonio {
+    width: 117rem;
+    height: 36.8rem;
+    margin: 1rem 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 .3rem 1.3rem .1rem rgb(0 0 0 / 9%);;
+}
+
+.img-testimonio {
+    height: 100%;
+    width: auto;
+}
+
+.contenedor-texto-testimonio {    
+    text-align: center;
+    padding: 4rem;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.nombre-testimonio {
+    font-size: 2em;
+}
+
+.cargo-testimonio {
+    font-size: 1.3em ;
+    padding-bottom: 1rem;
+}
+
+.texto-testimonio {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 900px) {
+    .contenedor-testimonio {
+        width: 90%; /* Ajusta el ancho para que ocupe el 90% del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        flex-direction: column; /* Cambia la dirección a columna */
+        padding: 2rem; /* Reduce el padding */
+    }
+
+    .img-testimonio {
+        height: auto; /* Permite que la imagen mantenga su proporción */
+        width: 80%; /* Ajusta el ancho de la imagen */
+        margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+    }
+
+    .contenedor-texto-testimonio {
+        padding: 2rem; /* Reduce el padding en el contenedor de texto */
+    }
+
+    .nombre-testimonio {
+        font-size: 1.7em; /* Reduce el tamaño de la fuente */
+        line-height: 1.3em;
+    }
+
+    .cargo-testimonio {
+        font-size: 1.3em; /* Reduce el tamaño de la fuente */
+        line-height: 1.5em;
+    }
+
+    .texto-testimonio {
+        font-size: 1.3em; /* Reduce el tamaño de la fuente */
+        line-height: 3.5rem;
+    }
+}
