@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';  
 import '../hojas-de-estilo/Testimonio.css';
 
 function Testimonio(props){
@@ -7,16 +7,14 @@ function Testimonio(props){
             <img
             className ='img-testimonio'
             src = {require(`../img/testimonio-${props.imagen}.png`)}
-            alt ='Imagen de Emma'
-            />
+            alt ={`Imagen de ${props.nombre}`} />
 
             <div className ='contenedor-texto-testimonio'>
                 <p className='nombre-testimonio'>
                     <strong>{props.nombre}</strong> en {props.pais}</p>
                 <p className='cargo-testimonio'>
                     {props.cargo} en <strong>{props.empresa}</strong></p>
-                <p className='texto-testimonio' dangerouslySetInnerHTML={{ __html: props.testimonio }} />    
-                {/* <p className='texto-testimonio' >"{props.testimonio}"</p> */}
+                <p className='texto-testimonio' dangerouslySetInnerHTML={{ __html: props.testimonio }} />                
             </div>
         </div>
     );
